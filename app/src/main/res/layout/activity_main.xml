@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/halfwarn"
+    android:background="@color/background"
     tools:context=".MainActivity">
 
 
@@ -51,7 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:text="@string/male"
             android:id="@+id/textmale"
             android:textStyle="bold"
@@ -91,7 +91,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:text="@string/femaletext"
             android:id="@+id/textfemale"
             android:textStyle="bold"
@@ -124,7 +124,7 @@
             android:textStyle="bold"
             android:fontFamily="@font/raleway"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:text="@string/height"
             android:textSize="20sp">
 
@@ -149,14 +149,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/unit"
-            android:textSize="20sp"
-            android:fontFamily="@font/raleway"
-            android:textStyle="bold"
-            android:layout_toEndOf="@id/currentheight"
-            android:layout_marginStart="20dp"
             android:layout_centerInParent="true"
-            android:textColor="@color/white" />
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/currentheight"
+            android:fontFamily="@font/raleway"
+            android:text="@string/unit"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
 
         <SeekBar
@@ -212,7 +212,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:text="@string/weight"
             android:fontFamily="@font/raleway"
             android:id="@+id/textweight"
@@ -302,7 +302,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:text="@string/age"
             android:fontFamily="@font/raleway"
             android:layout_marginTop="15dp"

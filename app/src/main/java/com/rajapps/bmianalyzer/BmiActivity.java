@@ -67,8 +67,10 @@ public class BmiActivity extends AppCompatActivity {
         intheight=Float.parseFloat(height);
         intweight=Float.parseFloat(weight);
 
+        //...................formula for calculating BMI.........
         intheight=intheight/100;
         intbmi=intweight/(intheight*intheight);
+        //...................formula for calculating BMI.........
 
         mbmi=Float.toString(intbmi);
         System.out.println(mbmi);
