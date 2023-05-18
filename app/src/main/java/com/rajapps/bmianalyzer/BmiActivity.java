@@ -1,6 +1,7 @@
 package com.rajapps.bmianalyzer;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -34,21 +35,27 @@ public class BmiActivity extends AppCompatActivity {
     RelativeLayout mbackground;
 
 
-    @SuppressLint("ResourceAsColor")
+  //  @SuppressLint("ResourceAsColor")
+  @SuppressLint({"MissingInflatedId", "LocalSuppress"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bmi);
         //main codes
 
-        getSupportActionBar().setElevation(0);
-        ColorDrawable colorDrawable=new ColorDrawable(Color.parseColor("#1E1D1D"));
-        getSupportActionBar().setBackgroundDrawable(colorDrawable);
 
 
-        getSupportActionBar().setTitle(Html.fromHtml("<font color=\"white\"></font>"));
-        getSupportActionBar().setTitle("Result");
 
+       //  Toolbar toolbar = findViewById(R.id.custom_toolbar2);
+        //setSupportActionBar(toolbar);
+//        getSupportActionBar().setElevation(0);
+//        ColorDrawable colorDrawable=new ColorDrawable(Color.parseColor("#1E1D1D"));
+//        getSupportActionBar().setBackgroundDrawable(colorDrawable);
+//
+//
+//        getSupportActionBar().setTitle(Html.fromHtml("<font color=\"white\"></font>"));
+//        getSupportActionBar().setTitle("Result");
+//
 
         intent=getIntent();
 

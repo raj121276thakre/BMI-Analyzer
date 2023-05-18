@@ -5,18 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/background"
-    android:background="@color/background"
+    android:background="@drawable/bg5"
     tools:context=".BmiActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/custom_toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/bg5">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textColor="@android:color/black"
+
+            android:textSize="27sp"/>
+
+        <!-- add any other views or layout elements you want here -->
+
+    </androidx.appcompat.widget.Toolbar>
 
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
         android:id="@+id/imageview"
+        android:layout_width="145dp"
+        android:layout_height="151dp"
         android:layout_above="@id/contentlayout"
-        android:layout_marginBottom="30dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:padding="10dp"
         android:src="@drawable/ok">
 
     </ImageView>
@@ -24,8 +46,8 @@
 
     <RelativeLayout
         android:id="@+id/contentlayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="340dp"
+        android:layout_height="217dp"
         android:layout_centerInParent="true"
         android:background="@drawable/cardbackgroung"
         android:padding="20dp">

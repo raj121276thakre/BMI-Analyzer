@@ -1,6 +1,7 @@
 package com.rajapps.bmianalyzer;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
@@ -40,7 +41,9 @@ public class MainActivity extends AppCompatActivity {
         //main codes
 
         // hiding action Bar
-        getSupportActionBar().hide();
+       // Toolbar toolbar = findViewById(R.id.custom_toolbar);
+     //   setSupportActionBar(toolbar);
+      //  getSupportActionBar().hide();
 
         //finding id's and connecting to variables
         mcurrentage=findViewById(R.id.currentage);

@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">BMI Analyzer</string>
 
+    <string name="bgImage">@drawable/bg11</string>
+
     <string name="unit">Cm</string>
     <string name="femaletext">Female</string>
     <string name="age">Age</string>
